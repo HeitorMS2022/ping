@@ -1,0 +1,58 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping-Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body>
+        <center>
+            <div class="btn btn-info oii">
+                <h3>Ia Ping-Pong</h3>
+                <button class="btn btn-info" data-toggle="modal" data-target="#my-screen">Instruções</button>
+            </div>
+            <br>
+            <button onclick="startGame()" id="oi"></button>
+            <br>
+            <label id="status"></label>
+            <br>
+            <button onclick="restart()">Recomeçar</button>
+            <br>
+            <br>
+            <div id="kk">
+                <canvas id="canva"></canvas>
+            </div>
+            <div id="my-screen" class="modal fade">
+                <div class="modal-dialogue">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" data-dismiss="modal">&times;</button>
+                      <h4>Instruções</h4>
+                    </div>
+                    <div class="modal-body">
+                      <ol>
+                        <li>Mantenha a tela do seu notebook reta</li>
+                        <li>Fique a aproximadamente 1 metro de distância do notebook</li>
+                        <li>Mova seu punho direita na vertical, de cima para baixo</li>
+                        <li>Um ponto vermelho deve aparecer sobre seu punho</li>
+                        <li>Pressione o botão "Jogar" e, mais uma vez, fique a 1 metro do notebook</li>
+                        <li>A raquete vermelha é a sua</li>
+                        <li>Ela se move de acordo com o movimento do seu punho direito</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>

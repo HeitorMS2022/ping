@@ -1,0 +1,23 @@
+body
+{
+    background-image: url("background1.jpg");
+}
+.oii{
+    width: 100%;
+    text-align: left;
+}
+.oii h3{
+    display: inline;
+}
+.oii button{
+    float: right;
+    border-color: chocolate;
+}
+#oi{
+    background-color: yellow;
+}
+canvas{
+    border: 3px dotted cyan;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px yellow;
+}
